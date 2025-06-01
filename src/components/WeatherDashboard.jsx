@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import '../App.css';
 
+import searchingImg from '../assets/images/searching.png'
+
 const apiKey = import.meta.env.VITE_WEATHER_API_KEY;
 
 
@@ -144,7 +146,7 @@ const WeatherDashboard = () => {
         </section>
       ) : (
         <section className="search_city section-message">
-          <img src="/Weather_Dashboard/src/assets/images/searching.png" alt="Search City" />
+          <img src={searchingImg} alt="Search City" />
           <div>
             <h2>Search City</h2>
             <h4 className="regular_text">Find out the weather conditions of the city</h4>
