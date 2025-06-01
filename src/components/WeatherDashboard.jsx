@@ -148,7 +148,7 @@ const WeatherDashboard = () => {
               return (
                 <div className="forecast_item" key={idx}>
                   <h5 className="forecast_item_date">{date}</h5>
-                  <img src={`/Weather_Dashboard/src/assets/icons/${getWeatherIcon(item.weather[0].id)}`} className="forecast-item-img" alt="Forecast Icon" />
+                  <img src={getWeatherIcon(item.weather[0].id)} className="forecast-item-img" alt="Forecast Icon" />
                   <h5 className="forecast_item_temp">{Math.round(item.main.temp)} ℉</h5>
                 </div>
               );
