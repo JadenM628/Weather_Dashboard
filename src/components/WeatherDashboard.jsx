@@ -111,7 +111,7 @@ const WeatherDashboard = () => {
 
           <div className="weather_summary_container">
             <img
-              src={`/Weather_Dashboard/src/assets/icons/${getWeatherIcon(weatherData.weather[0].id)}`}
+              src={getWeatherIcon(weatherData.weather[0].id)}
               className="weather_summary_img"
               alt="Weather Icon"
             />
