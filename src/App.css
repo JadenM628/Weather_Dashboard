@@ -44,6 +44,21 @@ body::before {
     padding: 20px;
 }
 
+.back-arrow {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    font-size: 1rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: rgb(255, 255, 255, 0.75);
+    z-index: 10;
+}
+
+.back-arrow:hover {
+    text-decoration: underline;
+    color: white;
+}
 /*Input Container */
 
 .input-container {

@@ -60,6 +60,8 @@ const WeatherDashboard = () => {
   };
 
   return (
+    <>
+    <a href="#" className='back-arrow'>← Back to Portfolio</a>
     <main className="main-container">
       <header className="input-container">
         <input
@@ -144,12 +146,13 @@ const WeatherDashboard = () => {
         <section className="search_city section-message">
           <img src="/src/assets/images/searching.png" alt="Search City" />
           <div>
-            <h1>Search City</h1>
+            <h2>Search City</h2>
             <h4 className="regular_text">Find out the weather conditions of the city</h4>
           </div>
         </section>
       )}
     </main>
+    </>
   );
 };
 
