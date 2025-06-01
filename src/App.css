@@ -59,6 +59,14 @@ body::before {
     text-decoration: underline;
     color: white;
 }
+
+.responsive-image {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
 /*Input Container */
 
 .input-container {
