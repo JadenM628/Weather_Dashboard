@@ -74,7 +74,7 @@ const WeatherDashboard = () => {
 
   return (
     <>
-    <a href="#" className='back-arrow'>← Back to Portfolio</a>
+    <a href="https://jadenm628.github.io/PortfolioProject/#projects" className='back-arrow'>← Back to Portfolio</a>
     <main className="main-container">
       <header className="input-container">
         <input
