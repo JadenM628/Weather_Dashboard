@@ -60,6 +60,21 @@ body::before {
     color: white;
 }
 
+
+.search_city {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.search-img-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
 .responsive-image {
     width: 100%;
     max-width: 300px;

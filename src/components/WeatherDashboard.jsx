@@ -157,7 +157,9 @@ const WeatherDashboard = () => {
         </section>
       ) : (
         <section className="search_city section-message">
+          <div className='search-img-wrapper'>
           <img src={searchingImg} alt="Search City" className='responsive-image'/>
+          </div>
           <div>
             <h2>Search City</h2>
             <h4 className="regular_text">Find out the weather conditions of the city</h4>
