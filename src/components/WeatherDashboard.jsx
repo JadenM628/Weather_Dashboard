@@ -1,7 +1,18 @@
 import React, { useEffect, useState } from 'react';
 import '../App.css';
 
+//Import Icons
+import clearDayIcon from '../assets/icons/clear-day.svg';
+import cloudyIcon from '../assets/icons/cloudy.svg';
+import drizzleIcon from '../assets/icons/drizzle.svg';
+import fogIcon from '../assets/icons/fog.svg';
+import rainIcon from '../assets/icons/rain.svg';
+import snowIcon from '../assets/icons/snow.svg';
+import thunderIcon from '../assets/icons/thunderstorms.svg';
+
+//Import Images
 import searchingImg from '../assets/images/searching.png'
+import notFoundImg from '../assets/images/not-found.png'
 
 const apiKey = import.meta.env.VITE_WEATHER_API_KEY;
 
@@ -13,12 +24,12 @@ const WeatherDashboard = () => {
   const [error, setError] = useState(false);
 
   const getWeatherIcon = (id) => {
-    if (id <= 232) return 'thunderstorms.svg';
-    if (id <= 321) return 'drizzle.svg';
-    if (id <= 531) return 'rain.svg';
-    if (id <= 622) return 'snow.svg';
-    if (id <= 781) return 'fog.svg';
-    if (id === 800) return 'clear-day.svg';
+    if (id <= 232) return thunderIcon;
+    if (id <= 321) return drizzleIcon;
+    if (id <= 531) return rainIcon;
+    if (id <= 622) return snowIcon;
+    if (id <= 781) return fogIcon;
+    if (id === 800) return clearDayIcon;
     return 'cloudy.svg';
   };
 
@@ -81,7 +92,7 @@ const WeatherDashboard = () => {
 
       {error ? (
         <section className="not_found section-message">
-          <img src="/src/assets/images/not-found.png" alt="Not Found" />
+          <img src={notFoundImg} alt="Not Found" />
           <div>
             <h1>City Not Found</h1>
             <h4 className="regular_text">Try another city name.</h4>
