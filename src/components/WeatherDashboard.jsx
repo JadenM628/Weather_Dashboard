@@ -144,7 +144,7 @@ const WeatherDashboard = () => {
         </section>
       ) : (
         <section className="search_city section-message">
-          <img src="/src/assets/images/searching.png" alt="Search City" />
+          <img src="/Weather_Dashboard/src/assets/images/searching.png" alt="Search City" />
           <div>
             <h2>Search City</h2>
             <h4 className="regular_text">Find out the weather conditions of the city</h4>
