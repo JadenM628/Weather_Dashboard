@@ -111,7 +111,7 @@ const WeatherDashboard = () => {
 
           <div className="weather_summary_container">
             <img
-              src={`/src/assets/icons/${getWeatherIcon(weatherData.weather[0].id)}`}
+              src={`/assets/icons/${getWeatherIcon(weatherData.weather[0].id)}`}
               className="weather_summary_img"
               alt="Weather Icon"
             />
@@ -148,7 +148,7 @@ const WeatherDashboard = () => {
               return (
                 <div className="forecast_item" key={idx}>
                   <h5 className="forecast_item_date">{date}</h5>
-                  <img src={`/src/assets/icons/${getWeatherIcon(item.weather[0].id)}`} className="forecast-item-img" alt="Forecast Icon" />
+                  <img src={`/assets/icons/${getWeatherIcon(item.weather[0].id)}`} className="forecast-item-img" alt="Forecast Icon" />
                   <h5 className="forecast_item_temp">{Math.round(item.main.temp)} ℉</h5>
                 </div>
               );
