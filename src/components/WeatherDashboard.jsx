@@ -30,7 +30,7 @@ const WeatherDashboard = () => {
     if (id <= 622) return snowIcon;
     if (id <= 781) return fogIcon;
     if (id === 800) return clearDayIcon;
-    return 'cloudy.svg';
+    return cloudyIcon;
   };
 
   const getCurrentDate = () => {
